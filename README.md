@@ -1,2 +1,2 @@
 # To-Do-List-CSharp-.NET
-it's a to do list web page to practice c# and .net
+This is a to-do list web application created to practice and enhance my skills in C# and .NET.
