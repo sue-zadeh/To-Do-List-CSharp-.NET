@@ -8,14 +8,17 @@
 </form>
 
 <ul>
-    @foreach (var item in Model)
+    @if (Model != null)
     {
-        <li>
-            @item.Title
-            <form asp-action="Remove" method="post" style="display:inline;">
-                <input type="hidden" name="id" value="@item.Id" />
-                <button type="submit">Remove</button>
-            </form>
-        </li>
+        foreach (var item in Model)
+        {
+            <li>
+                @item.Title
+                <form asp-action="Remove" method="post" style="display:inline;">
+                    <input type="hidden" name="id" value="@item.Id" />
+                    <button type="submit">Remove</button>
+                </form>
+            </li>
+        }
     }
 </ul>
